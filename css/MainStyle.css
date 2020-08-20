@@ -1,0 +1,284 @@
+#introduction {
+    background-image: url("../Pictures/james-harrison-UVMPVIRCF5w-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 650px;
+    width: 100vm;
+   
+}
+#self-intro {
+    background-color: #474853;
+    color: oldlace;
+    position: absolute;
+    width: 350px;
+    height: 150px;
+    border-radius: 8px;
+    animation-name: Forward; 
+    animation-duration: .85s;
+    animation-fill-mode: forwards;
+} 
+
+@keyframes Forward {
+  from { display: none; opacity: 0%; left: 0%;  top: 30%; }
+  to{opacity: 95%; left: 15%; top: 30%;}
+}
+
+@keyframes Backward {
+  from { opacity: 95%; left: 15%; top: 30%;}
+  to {display: none; opacity: 0%; left: 0%; top: 30%;}
+
+}
+
+#para1 {
+    width: 275px;
+    position: relative;
+    top: 10%;
+    left: 12%;
+    font-size: large;
+}
+
+
+body {
+    background-color: #22252C;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    background-color: #EAC67A;
+    height: 1px;
+    border: none;
+    margin-bottom: 25px;
+    width: 35%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #22252C;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: #EAC67A;
+  }
+
+  /*column card styling*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 15px 30px 30px 0 rgba(230, 225, 225, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #EAE3EA;
+    border-radius: 8px;
+    color: black;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+
+  .titles {
+      text-align: center;
+      color: oldlace;
+  }
+
+  /*social media buttons*/
+
+  #social {
+      height: 100px;
+      margin-top: 25px;
+  }
+
+  /* background resizing for main page */
+@media screen and (max-width: 980px) {
+    #introduction {
+      height: 450px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+@media screen and (max-width: 670px) {
+    #introduction {
+          height: 350px;
+      }
+  }
+
+@media screen and (max-width: 520px) {
+    #introduction {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #introduction {
+        height: 150px;
+    }
+}
+@media screen and (max-width: 280px) {
+    #introduction {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 160px) {
+    #introduction {
+        height: 300px;
+    }
+}
+
+/* resizing for self-intro */
+
+@media screen and (max-width: 980px) {
+    #self-intro {
+      width: 200px;
+      height: 125px; /* The width is 100%, when the viewport is 800px or smaller */
+      font-size: small;
+      
+    }
+  }
+
+@media screen and (max-width: 670px) {
+    #self-intro {
+          width: 100px;
+          height: 200px;
+          
+      }
+  }
+
+@media screen and (max-width: 520px) {
+    #self-intro {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #self-intro {
+        top: 35%;
+        width: 100px;
+        height: 90px;
+    }
+}
+@media screen and (max-width: 280px) {
+    #self-intro {
+        top: 53%;
+        width: 100px;
+        height: 90px;
+    }
+}
+
+/* text resizing for self intro */
+@media screen and (max-width: 980px) {
+    #para1 {
+        top: -5px;
+        width: 150px;
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 670px) {
+    #para1 {
+        top: 5px;
+        width: 75px;
+        font-size: small;
+    }
+}
+@media screen and (max-width: 520px) {
+    #para1 {
+        top: 0px;
+        width: 75px;
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width: 360px) {
+    #para1 {
+        top: -2px;
+        width: 75px;
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width: 280px) {
+    #para1 {
+        top: 0px;
+        width: 75px;
+        font-size: xx-small;
+    }
+}
+
+
+/* project pictures */
+
+@media screen and (min-width: 1020px) {
+    .Propic {
+      width: 200px; /* The width is 100%, when the viewport is 800px or smaller */
+      height: 175px;
+    }
+  }
+@media screen and (max-width: 1020px) {
+    .Propic {
+      width: 150px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+@media screen and (max-width: 827px) {
+    .Propic {
+          width: 125px;
+      }
+  }
+
+@media screen and (max-width: 707px) {
+    .Propic {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Propic {
+        width: 200px;
+    }
+}
+
+
