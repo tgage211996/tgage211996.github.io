@@ -94,8 +94,6 @@ ul {
   
   /* Remove extra left and right margins, due to padding in columns */
   .row {
-      /* display: flex;
-      justify-content: center; */
       margin: 0;
     }
   
