@@ -137,6 +137,11 @@ ul {
   }
 
   /* background resizing for main page */
+@media screen and (min-width: 980px) {
+    #introduction {
+      height: 650px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
 @media screen and (max-width: 980px) {
     #introduction {
       height: 450px; /* The width is 100%, when the viewport is 800px or smaller */
